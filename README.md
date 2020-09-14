@@ -46,7 +46,7 @@ sudo systemctl restart sshd
 ## Menambahkan user dan group sftp
 ```bash
 groupadd sftponly
-useradd user -f sftponly -s /bin/false
+useradd user -g sftponly -s /bin/false
 ```
 
 ## Berikan password ke user
